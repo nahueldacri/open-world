@@ -26,8 +26,11 @@ aside{
     width: 100%;
 }
 .principal-news{
-    background-color: rgb(220, 220, 220);   
-    padding: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(220, 220, 220);
 }
 .link-news{
     text-decoration: none;
