@@ -13,6 +13,10 @@ h3{
 h4{
     font-size: 20px;
 }
+p{
+    display: flex;
+    justify-content: flex-start;
+}
 aside{
     display: flex;
     flex-direction: column;
@@ -28,8 +32,9 @@ aside{
 .principal-news{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     padding: 5px;
+    width: 100%;
     background-color: rgb(220, 220, 220);
 }
 .link-news{
@@ -95,12 +100,8 @@ aside{
     }
 }
 @media only screen and (min-width: 768px){
-        .img-sidebar{
+    .img-sidebar{
         width: 50%;
-    }
-    p{
-        display: flex;
-        text-align: right;
     }
     .last-news{
         display: flex;
@@ -114,6 +115,10 @@ aside{
     }
     aside{
         margin-left: 10px;
+    }
+    p{
+        display: flex;
+        justify-content: flex-start;
     }
     h2{
         font-size: 32px;
@@ -130,6 +135,10 @@ aside{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    p{
+        display: flex;
+        justify-content: flex-start;
     }
 }
 

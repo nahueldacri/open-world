@@ -1,44 +1,39 @@
 .navbar{
-    display: flex;
-    flex-direction: row ;
-    justify-content: space-between;
-    height: 40px    ;
-    align-items: center;
-    background-color: black;
+    display: none;
 }
-
-.navbar a{
-    display: inline-flex;
-    justify-content: left;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    font-weight: 600;
-}
-
 #seeker{
-    display: flex ;
-    height: 32px;
+    display: flex;
     align-items: center;
+    height: 32px;
 }
-
 .navbar a:hover{
     color: tomato;
     font-size: 22px;
 }
-
 #data{
     text-align: left;
     padding: 10px;
     margin-bottom: 5px;
-    font-size: 14px;
-    font-weight: bold;
     background-color: tomato;
+    font-size: 14px;
+    font-weight: bold;  
 }
 
-@media only screen and (max-width: 768px){
-    nav{
-        display: none;
+@media only screen and (min-width: 768px){
+    .navbar{
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        height: 40px;
     }
-
+    .navbar a{
+        display: inline-flex;
+        justify-content: left;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        font-weight: 600;
+    }
 }
