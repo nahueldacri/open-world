@@ -2,10 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
-    height: 80px;
     background-color: black;
     color: tomato;
+    font-size: 16px;
+    height: 80px;
 }
 #page-title{
     display: none;
@@ -22,9 +22,6 @@
     }
 }
 @media only screen and (min-width: 768px){
-    #icon{
-        display: none;
-    }
     #newspaper-name{
         display: flex;
         flex-direction: row;
@@ -34,10 +31,12 @@
     #logo{
         display: flex;
         margin-right: 100px;
-        
     }
     #page-title{
         display: flex;
         justify-content: center;
+    }
+    #icon{
+        display: none;
     }
 }

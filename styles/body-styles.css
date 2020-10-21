@@ -4,18 +4,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(230, 230, 230);
 }
-h2{
-    font-size: 20px;
-}
-h3{
-    font-size: 20px;
-}
-h4{
+h2 h3 h4{
     font-size: 20px;
 }
 p{
     display: flex;
-    justify-content: flex-start;
+    text-align: left;
 }
 aside{
     display: flex;
@@ -34,15 +28,23 @@ aside{
     flex-direction: column;
     align-content: center;
     padding: 5px;
-    width: 100%;
     background-color: rgb(220, 220, 220);
+    width: 100%;
 }
 .link-news{
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 }
 .link-news:hover{
     color: tomato;
+}
+.img-principal{
+    width: 100%;
+}
+.datatime-news{
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 10px;
 }
 .news-sidebar{
     padding: 5px;
@@ -51,11 +53,6 @@ aside{
 }
 .img-sidebar{
     width: 100%;
-}
-.datatime-news{
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 10px;
 }
 .dividing-line{
     height: 3px;
@@ -80,16 +77,16 @@ aside{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     background-color: rgb(220, 220, 220);
+    width: 100%;
 }
 .old-news{
     width: 100%;   
 }
 .line-device{
-    height: 3px;
-    background-color: rgb(210, 210, 210);
     border: none;
+    background-color: rgb(210, 210, 210);
+    height: 3px;
 }
 
 @media only screen and (min-width: 600px){
@@ -100,6 +97,22 @@ aside{
     }
 }
 @media only screen and (min-width: 768px){
+    h2{
+        font-size: 32px;
+    }
+    p{
+        display: flex;
+        text-align: left;
+    }
+    aside{
+        margin-left: 10px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 18px;
+    }
     .img-sidebar{
         width: 50%;
     }
@@ -113,33 +126,20 @@ aside{
         flex-direction: row;
         justify-content: space-around;
     }
-    aside{
-        margin-left: 10px;
-    }
-    p{
-        display: flex;
-        justify-content: flex-start;
-    }
-    h2{
-        font-size: 32px;
-    }
-    h3{
-        font-size: 20px;
-    }
-    h4{
-        font-size: 18px;
-    }
 }
 @media only screen and (min-width: 1024px){
+    p{
+        display: flex;
+        text-align: left;
+    }
+    aside{
+        width: 800px;
+    }
     #main-content{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    p{
-        display: flex;
-        justify-content: flex-start;
-    }
+    }  
 }
 
 

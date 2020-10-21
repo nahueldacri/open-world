@@ -1,14 +1,14 @@
 .navbar{
     display: none;
 }
+.navbar a:hover{
+    color: tomato;
+    font-size: 22px;
+}
 #seeker{
     display: flex;
     align-items: center;
     height: 32px;
-}
-.navbar a:hover{
-    color: tomato;
-    font-size: 22px;
 }
 #data{
     text-align: left;
@@ -31,9 +31,9 @@
     .navbar a{
         display: inline-flex;
         justify-content: left;
-        text-decoration: none;
         padding: 10px;
         color: white;
+        text-decoration: none;
         font-weight: 600;
     }
 }
