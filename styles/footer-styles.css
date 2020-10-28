@@ -10,7 +10,11 @@ footer {
 }
 
 footer a {
+    background-color: black;
+    color: white;
     text-decoration: none;
+    height: 30px;
+    font-size: 14px;
 }
 
 footer a:hover {
