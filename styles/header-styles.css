@@ -1,4 +1,4 @@
-#newspaper-name{
+#newspaper-name {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,36 +7,41 @@
     font-size: 16px;
     height: 80px;
 }
-#page-title{
+
+#page-title {
     display: none;
 }
-#icon{
+
+#icon {
     float: right;
     margin-left: 30%;
 
 }
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 480px) {
     #newspaper-name{
         font-size: 24px;   
     }
 }
-@media only screen and (min-width: 768px){
-    #newspaper-name{
-        display: flex;
+
+@media only screen and (min-width: 768px) {
+    #newspaper-name {
         flex-direction: row;
         justify-content: flex-start;
         font-size: 30px;          
     }
-    #logo{
+
+    #logo {
         display: flex;
         margin-right: 100px;
     }
-    #page-title{
+
+    #page-title {
         display: flex;
         justify-content: center;
     }
-    #icon{
+
+    #icon {
         display: none;
     }
 }

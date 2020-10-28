@@ -1,16 +1,19 @@
-.navbar{
+.navbar {
     display: none;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     color: tomato;
     font-size: 22px;
 }
-#seeker{
+
+#seeker {
     display: flex;
     align-items: center;
     height: 32px;
 }
-#data{
+
+#data {
     text-align: left;
     padding: 10px;
     margin-bottom: 5px;
@@ -19,8 +22,8 @@
     font-weight: bold;  
 }
 
-@media only screen and (min-width: 768px){
-    .navbar{
+@media only screen and (min-width: 768px) {
+    .navbar {
         display: flex;
         flex-direction: row ;
         justify-content: space-between;
@@ -28,7 +31,8 @@
         background-color: black;
         height: 40px;
     }
-    .navbar a{
+
+    .navbar a {
         display: inline-flex;
         justify-content: left;
         padding: 10px;

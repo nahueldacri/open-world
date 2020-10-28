@@ -1,3 +1,3 @@
-#Links to principal page Open World
+# **Links to principal page Open World**
 
-https://nahueldacri.github.io/open-world/
+[*Go to Open World*](https://nahueldacri.github.io/open-world/)
