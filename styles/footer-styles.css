@@ -1,24 +1,43 @@
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     background-color: black;
     color: white;
-    padding: 10px;
-    height: 30px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     font-size: 14px;
 }
 
-footer a {
-    padding-left: 5px;
-    border-color: 2px tomato solid;
+button {
+    padding: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    background-color: rgb(210, 210, 210);
+}
+
+button:hover { 
+    background-color: tomato;
+}
+
+#github-link {
+    margin-top: 4px;
+    margin-bottom: 4px;
     text-decoration: none;
-    height: 30px;
+    color: white;
     font-size: 14px;
 }
 
-footer a:hover {
+#github-link:hover {
     font-weight: bold;
+}
+
+#form-button {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;   
 }
 
 @media only screen and (min-width: 768px) {
