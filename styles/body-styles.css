@@ -169,22 +169,46 @@ aside {
     margin: 20px;
 }
 
-#col1 {
+#col1, #col2 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
 }
 
-#col2 {
+.error-name, .error-email, .error-age, .error-phone, .error-adress {
+    display: none;
+}
+
+.error-city, .error-pc, .error-nid, .error-password, .error-repeatpassword {
+    display: none;
+}
+
+.error-msg-name, .error-msg-email, .error-msg-age, .error-msg-phone, .error-msg-adress {
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    justify-content: flex-start;
+    color: red;
+    margin-left: 20px;
+}
+
+.error-msg-city, .error-msg-pc, .error-msg-nid, .error-msg-password, .error-msg-repeatpassword {
+    display: flex;
+    justify-content: flex-start;
+    color: red;
+    margin-left: 20px;
+}
+
+#enter-name {
+    display: flex;
+    flex-direction: row;
 }
 
 @media only screen and (min-width: 768px){
     #form {
         flex-direction: row;
         justify-content: center;
+    }
+    #col1, #col2 {
+        width: 40%;
     }
 }
 

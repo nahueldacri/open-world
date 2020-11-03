@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/body-styles.css">
-    <link rel="stylesheet" href="styles/navbar-styles.css">
     <link rel="stylesheet" href="styles/header-styles.css">
     <link rel="stylesheet" href="styles/footer-styles.css">
     <title>Subscription form</title>
@@ -25,18 +24,48 @@
     <div id="form">
         <div id="col1">
             <input id="input-name" type="text" placeholder="Enter name">
-            <input id="input-name" type="text" placeholder="Enter e-mail">
-            <input id="input-name" type="text" placeholder="Enter age">
-            <input id="input-name" type="text" placeholder="Enter phone">
-            <input id="input-name" type="text" placeholder="Enter direction">    
+            <sub class="error-name">
+                Invalid name. It must have more than 6 letters and at least one space in between.
+            </sub>
+            <input id="input-email" type="email" placeholder="Enter e-mail">
+            <sub class="error-email">
+                Invalid e-mail. It must have a valid e-mail format.
+            </sub>
+            <input id="input-age" type="number" placeholder="Enter age">
+            <sub class="error-age">
+                Invalid age. Must be an integer greater than or equal to 18.
+            </sub>
+            <input id="input-phone" type="tel" placeholder="Enter phone">
+            <sub class="error-phone">
+                Invalid phone. Number of 7 digits or more, without spaces, hyphens or parentheses.
+            </sub>
+            <input id="input-adress" type="text" placeholder="Enter adress"> 
+            <sub class="error-adress">
+                Invalid adress. At least 5 characters long, with letters, numbers, and a space in between.
+            </sub>   
         </div>
         <div id="col2">
-            <input id="input-name" type="text" placeholder="Enter city">
-            <input id="input-name" type="text" placeholder="Enter postal code">
-            <input id="input-name" type="text" placeholder="Enter DNI">
-            <input id="input-name" type="text" placeholder="Enter password">
-            <input id="input-name" type="text" placeholder="Repeat password">   
-        </div>
+            <input id="input-city" type="text" placeholder="Enter city">
+            <sub class="error-city">
+                Invalid city. Must be at least 3 characters.
+            </sub>
+            <input id="input-pc" type="number" placeholder="Enter Postal Code">
+            <sub class="error-pc">
+                Invalid Postal code. Must be at least 3 characters.
+            </sub>
+            <input id="input-nid" type="number" placeholder="Enter NID">
+            <sub class="error-nid">
+                Invalid DNI. Must be 7 or 8 digits.
+            </sub>
+            <input id="input-password" type="password" placeholder="Enter password">
+            <sub class="error-password">
+                Invalid password. It must have at least 8 characters, consisting of letters and numbers.
+            </sub>
+            <input id="input-repeatpassword" type="password" placeholder="Repeat password">   
+            <sub class="error-repeatpassword">
+                Error. It is not the same
+            </sub>
+        </div>  
     </div>
     <button>
         Submit
@@ -44,6 +73,13 @@
     <footer>
         Copyright &copy; 2020 Open World. <a id="github-link" href="https://github.com/nahueldacri/open-world">Go to github repository</a>
     </footer>
-    
+    <script src="validate-name.js"></script>
+    <script src="validate-email.js"></script>
+    <script src="validate-age.js"></script>
+    <script src="validate-phone.js"></script>
+    <script src="validate-adress.js"></script>
+    <script src="validate-city.js"></script>
+    <script src="validate-pc.js"></script>
+    <script src="validate-nid.js"></script>
 </body>
 </html>
