@@ -179,7 +179,7 @@ aside {
     display: none;
 }
 
-.error-city, .error-pc, .error-nid, .error-password, .error-repeatpassword {
+.error-city, .error-pc, .error-nid, .error-password, .error-repeat-password {
     display: none;
 }
 
@@ -190,7 +190,7 @@ aside {
     margin-left: 20px;
 }
 
-.error-msg-city, .error-msg-pc, .error-msg-nid, .error-msg-password, .error-msg-repeatpassword {
+.error-msg-city, .error-msg-pc, .error-msg-nid, .error-msg-password, .error-msg-repeat-password {
     display: flex;
     justify-content: flex-start;
     color: red;
