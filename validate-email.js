@@ -18,7 +18,7 @@ function changeValueEmail () {
         alertErrorEmail.className = 'error-email';  
     }else{
         var alertErrorEmail = document.getElementsByClassName('error-msg-email')
-        alertErrorEmail[0].classEmail = 'error-email';
+        alertErrorEmail[0].className = 'error-email';
     }
     
 }

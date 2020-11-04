@@ -24,7 +24,7 @@ function changeValueAdress () {
         alertErrorAdress.className = 'error-adress';  
     }else{
         var alertErrorAdress = document.getElementsByClassName('error-msg-adress')
-        alertErrorAdress[0].classAdress = 'error-adress';
+        alertErrorAdress[0].className = 'error-adress';
     }
     
 }
