@@ -1,6 +1,6 @@
 /* Validate form */
 
-var formInput = document.getElementById('button')
+var formInput = document.getElementTagName('button')
 
 function validateForm() {
     var nameForm = validateName();
@@ -23,4 +23,4 @@ function validateForm() {
 
 
 
-formInput.click = validateFor ()
+formInput.onclick = validateFor ()

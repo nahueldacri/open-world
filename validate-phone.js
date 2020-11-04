@@ -16,9 +16,16 @@ function validatePhone () {
 }
 
 function changeValuePhone () {
-    var alertErrorPhone = document.getElementsByClassName('error-msg-phone')
-    alertErrorPhone[0].className = 'error-phone';
- }
-
+    var getPhone = document.getElementById('input-phone').value;
+    var alertErrorPhoneClass = document.getElementById('error-phone').getAttribute('class');
+    if (getPhone == "" && alertErrorPhoneClass == 'error-phone') {
+        var alertErrorPhone = document.getElementById('error-phone');
+        alertErrorPhone.className = 'error-phone';  
+    }else{
+        var alertErrorPhone = document.getElementsByClassName('error-msg-phone')
+        alertErrorPhone[0].className = 'error-phone';
+    }
+    
+}
 getPhone.onblur = validatePhone
 getPhone.onfocus = changeValuePhone

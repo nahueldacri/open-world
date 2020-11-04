@@ -17,9 +17,16 @@ function validatePassword () {
 }
 
 function changeValuePassword () {
-    var alertErrorPassword = document.getElementsByClassName('error-msg-password')
-    alertErrorPassword[0].className = 'error-password';
- }
+    var getPassword = document.getElementById('input-password').value;
+    var alertErrorPasswordClass = document.getElementById('error-password').getAttribute('class');
+    if (getPassword == "" && alertErrorPasswordClass == 'error-password') {
+        var alertErrorPassword = document.getElementById('error-password');
+        alertErrorPassword.className = 'error-password';  
+    }else{
+        var alertErrorPassword = document.getElementsByClassName('error-msg-password')
+        alertErrorPassword[0].className = 'error-password';
+    }
+}
 
 getPassword.onblur = validatePassword
 getPassword.onfocus = changeValuePassword

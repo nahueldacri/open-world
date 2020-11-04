@@ -11,8 +11,16 @@ function validateName (getName) {
 }
 
 function changeValueName () {
-   var alertErrorName = document.getElementsByClassName('error-msg-name')
-   alertErrorName[0].className = 'error-name';
+    var getName = document.getElementById('input-name').value;
+    var alertErrorNameClass = document.getElementById('error-name').getAttribute('class');
+    if (getName == "" && alertErrorNameClass == 'error-name') {
+        var alertErrorName = document.getElementById('error-name');
+        alertErrorName.className = 'error-name';  
+    }else{
+        var alertErrorName = document.getElementsByClassName('error-msg-name')
+        alertErrorName[0].className = 'error-name';
+    }
+    
 }
 
 getName.onblur = validateName

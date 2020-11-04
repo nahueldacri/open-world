@@ -11,9 +11,17 @@ function validateEmail (){
 }
 
 function changeValueEmail () {
-    var alertErrorEmail = document.getElementsByClassName('error-msg-email')
-    alertErrorEmail[0].className = 'error-email';
- }
+    var getEmail = document.getElementById('input-email').value;
+    var alertErrorEmailClass = document.getElementById('error-email').getAttribute('class');
+    if (getEmail == "" && alertErrorEmailClass == 'error-email') {
+        var alertErrorEmail = document.getElementById('error-email');
+        alertErrorEmail.className = 'error-email';  
+    }else{
+        var alertErrorEmail = document.getElementsByClassName('error-msg-email')
+        alertErrorEmail[0].classEmail = 'error-email';
+    }
+    
+}
 
 getEmail.onblur = validateEmail
 getEmail.onfocus = changeValueEmail

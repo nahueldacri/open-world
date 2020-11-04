@@ -11,9 +11,16 @@ function validateCity () {
 }
 
 function changeValueCity () {
-    var alertErrorCity = document.getElementsByClassName('error-msg-city')
-    alertErrorCity[0].className = 'error-city';
- }
-
+    var getCity = document.getElementById('input-city').value;
+    var alertErrorCityClass = document.getElementById('error-city').getAttribute('class');
+    if (getCity == "" && alertErrorCityClass == 'error-city') {
+        var alertErrorCity = document.getElementById('error-city');
+        alertErrorCity.className = 'error-city';  
+    }else{
+        var alertErrorCity = document.getElementsByClassName('error-msg-city')
+        alertErrorCity[0].className = 'error-city';
+    }
+    
+}
 getCity.onblur = validateCity
 getCity.onfocus = changeValueCity

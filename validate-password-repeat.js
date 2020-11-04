@@ -13,9 +13,16 @@ function validateRepeatPassword () {
 }
 
 function changeValueRepeatPassword () {
-    var alertErrorRepeatPassword = document.getElementsByClassName('error-msg-repeat-password')
-    alertErrorRepeatPassword[0].className = 'error-repeat-password';
- }
+    var getRepeatPassword = document.getElementById('input-repeat-password').value;
+    var alertErrorRepeatPasswordClass = document.getElementById('error-repeat-password').getAttribute('class');
+    if (getRepeatPassword == "" && alertErrorRepeatPasswordClass == 'error-repeat-password') {
+        var alertErrorRepeatPassword = document.getElementById('error-repeat-password');
+        alertErrorRepeatPassword.className = 'error-repeat-password';  
+    }else{
+        var alertErrorRepeatPassword = document.getElementsByClassName('error-msg-repeat-password')
+        alertErrorRepeatPassword[0].className = 'error-repeat-password';
+    }
+}
 
 getRepeatPassword.onblur = validateRepeatPassword
 getRepeatPassword.onfocus = changeValueRepeatPassword

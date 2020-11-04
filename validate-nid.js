@@ -11,9 +11,16 @@ function validateNID () {
 }
 
 function changeValueNID () {
-    var alertErrorNID = document.getElementsByClassName('error-msg-nid')
-    alertErrorNID[0].className = 'error-nid';
- }
+    var getNID = document.getElementById('input-nid').value;
+    var alertErrorNIDClass = document.getElementById('error-nid').getAttribute('class');
+    if (getNID == "" && alertErrorNIDClass == 'error-nid') {
+        var alertErrorNID = document.getElementById('error-nid');
+        alertErrorNID.className = 'error-nid';  
+    }else{
+        var alertErrorNID = document.getElementsByClassName('error-msg-nid')
+        alertErrorNID[0].className = 'error-nid';
+    }
+}
 
 getNID.onblur = validateNID
 getNID.onfocus = changeValueNID

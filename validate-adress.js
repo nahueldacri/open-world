@@ -17,9 +17,17 @@ function validateAdress () {
 }
 
 function changeValueAdress () {
-    var alertErrorAdress = document.getElementsByClassName('error-msg-adress')
-    alertErrorAdress[0].className = 'error-adress';
- }
+    var getAdress = document.getElementById('input-adress').value;
+    var alertErrorAdressClass = document.getElementById('error-adress').getAttribute('class');
+    if (getAdress == "" && alertErrorAdressClass == 'error-adress') {
+        var alertErrorAdress = document.getElementById('error-adress');
+        alertErrorAdress.className = 'error-adress';  
+    }else{
+        var alertErrorAdress = document.getElementsByClassName('error-msg-adress')
+        alertErrorAdress[0].classAdress = 'error-adress';
+    }
+    
+}
 
 getAdress.onblur = validateAdress
 getAdress.onfocus = changeValueAdress
