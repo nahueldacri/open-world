@@ -186,6 +186,7 @@ aside {
 .error-msg-name, .error-msg-email, .error-msg-age, .error-msg-phone, .error-msg-adress {
     display: flex;
     justify-content: flex-start;
+    width: 5em;
     color: red;
     font-size: 10px;
 }
@@ -193,6 +194,7 @@ aside {
 .error-msg-city, .error-msg-pc, .error-msg-nid, .error-msg-password, .error-msg-repeat-password {
     display: flex;
     justify-content: flex-start;
+    width: 5em;
     color: red;
     font-size: 10px;
 }
