@@ -187,14 +187,14 @@ aside {
     display: flex;
     justify-content: flex-start;
     color: red;
-    margin-left: 20px;
+    font-size: 10px;
 }
 
 .error-msg-city, .error-msg-pc, .error-msg-nid, .error-msg-password, .error-msg-repeat-password {
     display: flex;
     justify-content: flex-start;
     color: red;
-    margin-left: 20px;
+    font-size: 10px;
 }
 
 #enter-name {
@@ -210,6 +210,13 @@ aside {
     #col1, #col2 {
         width: 40%;
     }
+    .error-msg-name, .error-msg-email, .error-msg-age, .error-msg-phone, .error-msg-adress {
+        margin-left: 20px;
+    }
+    .error-msg-city, .error-msg-pc, .error-msg-nid, .error-msg-password, .error-msg-repeat-password {
+        margin-left: 20px;
+    }
+
 }
 
 
