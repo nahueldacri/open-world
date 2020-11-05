@@ -172,7 +172,13 @@ aside {
 #col1, #col2 {
     display: flex;
     flex-direction: column;
-    width: 80%;
+}
+
+.input-form {
+    height: 80px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .error-name, .error-email, .error-age, .error-phone, .error-adress {
@@ -186,16 +192,16 @@ aside {
 .error-msg-name, .error-msg-email, .error-msg-age, .error-msg-phone, .error-msg-adress {
     display: flex;
     justify-content: flex-start;
-    width: 5em;
-    color: red;
+    color: tomato;
+    margin-left: 20px;
     font-size: 10px;
 }
 
 .error-msg-city, .error-msg-pc, .error-msg-nid, .error-msg-password, .error-msg-repeat-password {
     display: flex;
     justify-content: flex-start;
-    width: 5em;
     color: red;
+    margin-left: 20px;
     font-size: 10px;
 }
 
@@ -209,16 +215,9 @@ aside {
         flex-direction: row;
         justify-content: center;
     }
-    #col1, #col2 {
-        width: 40%;
+    .form-input {
+        width: 50%;
     }
-    .error-msg-name, .error-msg-email, .error-msg-age, .error-msg-phone, .error-msg-adress {
-        margin-left: 20px;
-    }
-    .error-msg-city, .error-msg-pc, .error-msg-nid, .error-msg-password, .error-msg-repeat-password {
-        margin-left: 20px;
-    }
-
 }
 
 

@@ -19,8 +19,7 @@ function changeValueName () {
     }else{
         var alertErrorName = document.getElementsByClassName('error-msg-name')
         alertErrorName[0].className = 'error-name';
-    }
-    
+    } 
 }
 
 getName.onblur = validateName

@@ -23,48 +23,68 @@
     </h2>
     <div id="form">
         <div id="col1">
-            <input id="input-name" type="text" placeholder="Enter name">
-            <sub class="error-name" id="error-name">
-                Invalid name. It must have more than 6 letters and at least one space in between.
-            </sub>
-            <input id="input-email" type="email" placeholder="Enter e-mail">
-            <sub class="error-email" id="error-email">
-                Invalid e-mail. It must have a valid e-mail format.
-            </sub>
-            <input id="input-age" type="number" placeholder="Enter age">
-            <sub class="error-age" id="error-age">
-                Invalid age. Must be an integer greater than or equal to 18.
-            </sub>
-            <input id="input-phone" type="tel" placeholder="Enter phone">
-            <sub class="error-phone" id="error-phone">
-                Invalid phone. Number of 7 digits or more, without spaces, hyphens or parentheses.
-            </sub>
-            <input id="input-adress" type="text" placeholder="Enter adress"> 
-            <sub class="error-adress" id="error-adress">
-                Invalid adress. At least 5 characters long, with letters, numbers, and a space in between.
-            </sub>   
+            <div class="input-form">
+                <input id="input-name" type="text" placeholder="Enter name">
+                <label class="error-name" id="error-name">
+                    Invalid name. It must have more than 6 letters and at least one space in between.
+                </label>
+            </div>
+            <div class="input-form">
+                <input id="input-email" type="email" placeholder="Enter e-mail">
+                <label class="error-email" id="error-email">
+                    Invalid e-mail. It must have a valid e-mail format.
+                </label>
+            </div>
+            <div class="input-form">
+                <input id="input-age" type="number" placeholder="Enter age">
+                <label class="error-age" id="error-age">
+                    Invalid age. Must be an integer greater than or equal to 18.
+                </label>
+            </div>
+            <div class="input-form">
+                <input id="input-phone" type="tel" placeholder="Enter phone">
+                <label class="error-phone" id="error-phone">
+                    Invalid phone. Number of 7 digits or more, without spaces, hyphens or parentheses.
+                </label>
+            </div>
+            <div class="input-form">
+                <input id="input-adress" type="text" placeholder="Enter adress"> 
+                <label class="error-adress" id="error-adress">
+                    Invalid adress. At least 5 characters long, with letters, numbers, and a space in between.
+                </label>
+            </div>   
         </div>
         <div id="col2">
-            <input id="input-city" type="text" placeholder="Enter city">
-            <sub class="error-city" id="error-city">
-                Invalid city. Must be at least 3 characters.
-            </sub>
-            <input id="input-pc" type="number" placeholder="Enter Postal Code">
-            <sub class="error-pc" id="error-pc">
-                Invalid Postal code. Must be at least 3 characters.
-            </sub>
-            <input id="input-nid" type="number" placeholder="Enter NID">
-            <sub class="error-nid" id="error-nid">
-                Invalid DNI. Must be 7 or 8 digits.
-            </sub>
-            <input id="input-password" type="password" placeholder="Enter password">
-            <sub class="error-password" id="error-password">
-                Invalid password. It must have at least 8 characters, consisting of letters and numbers.
-            </sub>
-            <input id="input-repeat-password" type="password" placeholder="Repeat password">   
-            <sub class="error-repeat-password" id="error-repeat-password">
-                Error. It is not the same
-            </sub>
+            <div class="input-form">
+                <input id="input-city" type="text" placeholder="Enter city">
+                <label class="error-city" id="error-city">
+                    Invalid city. Must be at least 3 characters.
+                </label>
+            </div>
+            <div class="input-form">
+                <input id="input-pc" type="number" placeholder="Enter Postal Code">
+                <label class="error-pc" id="error-pc">
+                    Invalid Postal code. Must be at least 3 characters.
+                </label>
+            </div>
+            <div class="input-form">
+                <input id="input-nid" type="number" placeholder="Enter NID">
+                <label class="error-nid" id="error-nid">
+                    Invalid DNI. Must be 7 or 8 digits.
+                </label>
+            </div>
+            <div class="input-form">
+                <input id="input-password" type="password" placeholder="Enter password">
+                <label class="error-password" id="error-password">
+                    Invalid password. It must have at least 8 characters, consisting of letters and numbers.
+                </label>
+            </div>
+            <div class="input-form">
+                <input id="input-repeat-password" type="password" placeholder="Repeat password">   
+                <label class="error-repeat-password" id="error-repeat-password">
+                    Error. It is not the same
+                </label>
+            </div>
         </div>  
     </div>
     <button id="button">
